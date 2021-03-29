@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Search from '../components/search'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,8 +11,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>the first thing that needs to be fixed is..... </h1>
-        <h2>i need to look through apis</h2>
+        <h1>Cryptracker</h1>
+        <Search />
+        <h2>Will have a search component here</h2>
       </main>
 
       <footer className={styles.footer}>
