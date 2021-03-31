@@ -30,14 +30,6 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'jsx-a11y/anchor-is-valid': 'off',
         'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-        '@typescript-eslint/no-unused-vars': ['error'],
-        '@typescript-eslint/explicit-function-return-type': [
-          'warn',
-          {
-            allowExpressions: true,
-            allowConciseArrowFunctionExpressionsStartingWithVoid: true,
-          },
-        ],
       },
     },
   ],

@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react'
 const useSearchQueryFetch = (url) => {
-  // const [data, setData] = useState(null)
-  const data = 2
+  const [data, setData] = useState(null)
+
   useEffect(() => {
     fetch(url)
-      .then(res.json())
-      .then(console.log(res))
+      .then((res) => res.json())
+      .then((data) => console.log(data), setData(data))
       .catch((err) => console.log(err))
-  }, [])
-  g(url)
-  setSearch(val)
+  }, [url])
   return { data }
 }
 
