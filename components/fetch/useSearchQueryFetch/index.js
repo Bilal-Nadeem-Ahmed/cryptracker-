@@ -5,9 +5,11 @@ const useSearchQueryFetch = (url) => {
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => console.log(data), setData(data))
+      .then((info) => {
+        setData(info), console.log(info)
+      })
       .catch((err) => console.log(err))
-  }, [url])
+  }, [])
   return { data }
 }
 
