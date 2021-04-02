@@ -1,10 +1,10 @@
 import useSearchQueryFetch from '../../../fetch/useSearchQueryFetch'
-import { useState } from 'react'
 
 const SearchBar = ({ item }) => {
   const urlForList =
     'https://api.coingecko.com/api/v3/coins/list?include_platform=false'
   const data = useSearchQueryFetch(urlForList)
+
   const handleChange = (e) => {
     let newVal = e.target.value
     // this is the hook i made for the fetch. it currently takers the input and a function to set a value,  this is all that is currently needed for this fetch. next step is to rename it as a hook.
@@ -16,7 +16,7 @@ const SearchBar = ({ item }) => {
   return (
     <div>
       <input onChange={(e) => handleChange(e)} type="text" />
-      searchinput{item} {data && data.data.map((item) => item.name)} bit
+      {data && console.log(data.data)}
     </div>
   )
 }

@@ -6,7 +6,7 @@ const useSearchQueryFetch = (url) => {
     fetch(url)
       .then((res) => res.json())
       .then((info) => {
-        setData(info), console.log(info)
+        setData(info)
       })
       .catch((err) => console.log(err))
   }, [])
