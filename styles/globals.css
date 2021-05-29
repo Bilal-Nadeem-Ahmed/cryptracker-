@@ -14,3 +14,26 @@ a {
 * {
   box-sizing: border-box;
 }
+.navbar{
+  margin-top: 0;
+  min-width: 100vw;
+  background-color: grey ;
+  min-height: 30px;
+  position: fixed;
+  top: 0;
+  
+}
+.navbar ul{
+  display: flex;
+  margin: 0;
+}
+
+.navbar li{
+  list-style-type: none;
+  padding: 12px;
+
+}
+main {
+  min-height: 200vh;
+  color: aqua;
+}
